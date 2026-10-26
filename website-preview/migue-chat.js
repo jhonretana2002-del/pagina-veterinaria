@@ -4,6 +4,7 @@
   const panel = document.querySelector('#migue-panel');
   const closeButton = document.querySelector('#migue-close');
   const bark = document.querySelector('#migue-bark');
+  const barkTitle = document.querySelector('#migue-bark-title');
   const messages = document.querySelector('#migue-messages');
   const form = document.querySelector('#migue-form');
   const input = document.querySelector('#migue-input');
@@ -119,6 +120,19 @@
     launcher.setAttribute('aria-label', 'Abrir chat con Migue');
     launcher.focus();
   }
+
+  function greetWithBark() {
+    if (!panel.hidden) return;
+    barkTitle.textContent = '¡LADRIDO!';
+    bark.hidden = false;
+    launcher.classList.add('migue-is-barking');
+    window.setTimeout(() => {
+      launcher.classList.remove('migue-is-barking');
+      barkTitle.textContent = 'Migue';
+    }, 1350);
+  }
+
+  window.setTimeout(greetWithBark, 420);
 
   launcher.addEventListener('click', () => {
     if (panel.hidden) openChat();

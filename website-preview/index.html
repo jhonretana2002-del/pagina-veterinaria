@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#a9232b">
   <meta name="description" content="La Bodeguita de mi Mascota: una propuesta de sitio web para el cuidado y bienestar de tus mascotas.">
   <title>La Bodeguita de mi Mascota · Cuidado con cariño</title>
-  <link rel="stylesheet" href="styles.css?v=migue-20261026">
+  <link rel="stylesheet" href="styles.css?v=migue-bark-20261026">
 </head>
 <body>
   <div class="announcement">
@@ -229,14 +229,16 @@
     <div class="container footer-inner"><div class="footer-brand"><img src="assets/logo-bodeguita.png" alt="" aria-hidden="true"><span>La Bodeguita <small>de mi Mascota</small></span></div><p>Con tu mascota desde el 2014.</p><a href="#reviews-title">Reseñas ↑</a><a href="#inicio">Ir arriba ↑</a></div>
   </footer>
   <aside class="migue-widget" aria-label="Asistente virtual Migue">
-    <div class="migue-bark" id="migue-bark" role="status">
+    <div class="migue-bark" id="migue-bark" role="status" aria-live="polite" hidden>
       <button class="migue-bark-dismiss" type="button" aria-label="Ocultar saludo">×</button>
-      <strong>¡LADRIDO!</strong>
+      <strong id="migue-bark-title">¡LADRIDO!</strong>
       <span>¡Hola! Soy Migue. ¿Te ayudo?</span>
     </div>
     <button class="migue-launcher" id="migue-launcher" type="button" aria-label="Abrir chat con Migue" aria-controls="migue-panel" aria-expanded="false">
       <img src="assets/migue.png" alt="">
+      <span class="migue-mouth" aria-hidden="true"><span></span></span>
       <span class="migue-launcher-paw" aria-hidden="true">🐾</span>
+      <span class="migue-name-label">Migue</span>
     </button>
     <section class="migue-panel" id="migue-panel" role="dialog" aria-labelledby="migue-title" aria-modal="false" hidden>
       <header class="migue-header">
@@ -264,6 +266,6 @@
   <script src="assets/vendor/embla-carousel.umd.js"></script>
   <script src="assets/vendor/embla-carousel-auto-scroll.umd.js"></script>
   <script src="script.js"></script>
-  <script src="migue-chat.js"></script>
+  <script src="migue-chat.js?v=bark-20261026"></script>
 </body>
 </html>
