@@ -208,14 +208,12 @@ body{font-family:var(--body-font)}
 .migue-launcher{position:relative;width:82px;height:82px;padding:4px;border:3px solid #fff;border-radius:50%;background:var(--red);box-shadow:0 8px 26px rgba(44,30,26,.28);cursor:pointer;transition:transform .2s,box-shadow .2s;animation:none}
 .migue-launcher:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 11px 30px rgba(44,30,26,.34)}
 .migue-launcher:focus-visible,.migue-close:focus-visible,.migue-bark-dismiss:focus-visible,.migue-form button:focus-visible,.migue-topics button:focus-visible,.migue-actions a:focus-visible{outline:3px solid #edaa21;outline-offset:3px}
-.migue-launcher img,.migue-header img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+.migue-cartoon{display:block;width:100%;height:100%;flex:0 0 auto;overflow:hidden;border-radius:50%;background-image:url('assets/migue-bark-sprite.png');background-repeat:no-repeat;background-size:200% 200%;background-position:0 0;clip-path:circle(50%)}
+.migue-header .migue-cartoon{width:48px;height:48px;flex:0 0 48px;border:2px solid #fff}
 .migue-launcher-paw{position:absolute;right:-4px;top:-3px;width:28px;height:28px;display:grid;place-items:center;border:2px solid #fff;border-radius:50%;background:#fff;color:var(--red);font-size:16px;line-height:1}
 .migue-name-label{position:absolute;left:50%;bottom:-12px;z-index:3;padding:3px 10px;border:1px solid #eadfd5;border-radius:999px;background:#fffdf9;color:var(--red-dark);font-size:12px;font-weight:900;line-height:1.2;box-shadow:0 3px 10px rgba(44,30,26,.15);transform:translateX(-50%)}
-.migue-mouth{position:absolute;left:40%;top:51%;z-index:2;width:14px;height:8px;display:grid;place-items:end center;overflow:hidden;border-radius:45% 45% 60% 60%;background:#251411;opacity:0;transform:scaleY(.12);transform-origin:center;pointer-events:none}
-.migue-mouth span{width:8px;height:3px;margin-bottom:0;border-radius:60% 60% 45% 45%;background:#df7880;opacity:0}
 .migue-launcher.migue-is-barking{animation:migue-dog-bark 1.35s ease-in-out both}
-.migue-launcher.migue-is-barking .migue-mouth{animation:migue-mouth-bark .45s ease-in-out 3;opacity:1}
-.migue-launcher.migue-is-barking .migue-mouth span{animation:migue-tongue-bark .45s ease-in-out 3}
+.migue-launcher.migue-is-barking .migue-cartoon{animation:migue-sprite-bark 1.35s steps(1,end) both}
 .migue-bark{position:relative;display:grid;gap:3px;width:max-content;max-width:min(260px,calc(100vw - 40px));padding:13px 36px 13px 17px;border:2px solid var(--red);border-radius:15px;background:#fffdf9;color:var(--ink);box-shadow:0 6px 22px rgba(44,30,26,.15);animation:migue-bark-in .45s cubic-bezier(.2,.8,.2,1) both}
 .migue-bark::after{content:'';position:absolute;right:23px;bottom:-9px;width:15px;height:15px;background:#fffdf9;border-right:2px solid var(--red);border-bottom:2px solid var(--red);transform:rotate(45deg)}
 .migue-bark strong{font-family:var(--display-font);font-size:17px;letter-spacing:.045em;color:var(--red)}
@@ -241,8 +239,7 @@ body{font-family:var(--body-font)}
 .migue-form button:hover{background:var(--red-dark)}
 .migue-note{margin:0;padding:0 14px 11px;background:#fff;color:var(--muted);font-size:10px;line-height:1.4}
 @keyframes migue-dog-bark{0%,100%{transform:translateY(0) rotate(0)}18%,54%,85%{transform:translateY(-4px) rotate(-3deg)}36%,70%{transform:translateY(0) rotate(3deg)}}
-@keyframes migue-mouth-bark{0%,100%{transform:scaleY(.15)}35%,70%{transform:scaleY(1)}}
-@keyframes migue-tongue-bark{0%,25%,100%{opacity:0;transform:translateY(-2px)}45%,75%{opacity:1;transform:translateY(0)}}
+@keyframes migue-sprite-bark{0%,12%{background-position:0% 0%}13%,36%{background-position:100% 0%}37%,62%{background-position:0% 100%}63%,88%{background-position:100% 100%}89%,100%{background-position:0% 0%}}
 @keyframes migue-bark-in{from{opacity:0;transform:translateY(7px) scale(.95)}to{opacity:1;transform:translateY(0) scale(1)}}
 @keyframes migue-panel-in{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
 @media(max-width:600px){.migue-widget{right:14px;bottom:14px;gap:9px}.migue-launcher{width:70px;height:70px}.migue-panel{right:-2px;bottom:83px;width:calc(100vw - 24px);height:min(610px,calc(100dvh - 105px));min-height:340px;border-radius:16px}.migue-bark{max-width:230px;padding:11px 34px 11px 14px}.migue-bark strong{font-size:16px}}

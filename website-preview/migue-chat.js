@@ -109,6 +109,8 @@
   function openChat() {
     panel.hidden = false;
     bark.hidden = true;
+    launcher.classList.remove('migue-is-barking');
+    barkTitle.textContent = 'Migue';
     launcher.setAttribute('aria-expanded', 'true');
     launcher.setAttribute('aria-label', 'Cerrar chat con Migue');
     input.focus();
