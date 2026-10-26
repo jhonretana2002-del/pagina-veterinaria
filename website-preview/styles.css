@@ -208,7 +208,7 @@ body{font-family:var(--body-font)}
 .migue-launcher{position:relative;width:82px;height:82px;padding:4px;border:3px solid #fff;border-radius:50%;background:var(--red);box-shadow:0 8px 26px rgba(44,30,26,.28);cursor:pointer;transition:transform .2s,box-shadow .2s;animation:none}
 .migue-launcher:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 11px 30px rgba(44,30,26,.34)}
 .migue-launcher:focus-visible,.migue-close:focus-visible,.migue-bark-dismiss:focus-visible,.migue-form button:focus-visible,.migue-topics button:focus-visible,.migue-actions a:focus-visible{outline:3px solid #edaa21;outline-offset:3px}
-.migue-cartoon{display:block;width:100%;height:100%;flex:0 0 auto;overflow:hidden;border-radius:50%;background-image:url('assets/migue-bark-sprite.png');background-repeat:no-repeat;background-size:200% 200%;background-position:0 0;clip-path:circle(50%)}
+.migue-cartoon{display:block;width:100%;height:100%;flex:0 0 auto;overflow:hidden;border-radius:50%;background-image:url('assets/migue-bark-sprite-v2.png');background-repeat:no-repeat;background-size:200% 200%;background-position:0 0;clip-path:circle(50%)}
 .migue-header .migue-cartoon{width:48px;height:48px;flex:0 0 48px;border:2px solid #fff}
 .migue-launcher-paw{position:absolute;right:-4px;top:-3px;width:28px;height:28px;display:grid;place-items:center;border:2px solid #fff;border-radius:50%;background:#fff;color:var(--red);font-size:16px;line-height:1}
 .migue-name-label{position:absolute;left:50%;bottom:-12px;z-index:3;padding:3px 10px;border:1px solid #eadfd5;border-radius:999px;background:#fffdf9;color:var(--red-dark);font-size:12px;font-weight:900;line-height:1.2;box-shadow:0 3px 10px rgba(44,30,26,.15);transform:translateX(-50%)}
