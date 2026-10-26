@@ -227,8 +227,8 @@ body{font-family:var(--body-font)}
 .migue-close{top:23px;right:14px;color:#fff;font-size:26px}
 .migue-social{padding:11px 13px 13px;border-bottom:1px solid #e7ddd2;background:#f8f2eb}
 .migue-social-title{display:block;margin:0 0 7px 2px;color:var(--red-dark);font-size:10px;font-weight:800;letter-spacing:.14em}
-.migue-social-links{display:flex;flex-direction:row;flex-wrap:nowrap;align-items:stretch;gap:7px}
-.migue-social-links>a{flex:1 1 0}
+.migue-social-links{display:flex;flex-direction:column;flex-wrap:nowrap;align-items:stretch;gap:7px}
+.migue-social-links>a{flex:0 0 auto;width:100%}
 .migue-social a{display:flex;align-items:center;justify-content:center;gap:6px;min-width:0;min-height:44px;padding:6px 5px;border:1px solid #e4cfc7;border-radius:10px;background:#fffdf9;color:var(--red-dark);font-size:11px;font-weight:800;white-space:nowrap;transition:background .2s,border-color .2s,transform .2s}
 .migue-social a:hover{background:#fce9e5;border-color:#c8857c;transform:translateY(-2px)}
 .migue-social-icon{display:grid;place-items:center;flex:0 0 27px;width:27px;height:27px;border-radius:50%;background:var(--red-dark);color:#fff}
@@ -254,5 +254,5 @@ body{font-family:var(--body-font)}
 @keyframes migue-bark-in{from{opacity:0;transform:translateY(7px) scale(.95)}to{opacity:1;transform:translateY(0) scale(1)}}
 @keyframes migue-panel-in{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
 @media(max-width:600px){.migue-widget{right:14px;bottom:14px;gap:9px}.migue-launcher{width:70px;height:70px}.migue-panel{right:-2px;bottom:83px;width:calc(100vw - 24px);height:min(610px,calc(100dvh - 105px));min-height:340px;border-radius:16px}.migue-bark{max-width:230px;padding:11px 34px 11px 14px}.migue-bark strong{font-size:16px}}
-@media(max-width:380px){.migue-social a{flex-direction:column;gap:4px;min-height:59px;padding:5px 2px;font-size:10px}}
+@media(max-width:380px){.migue-social a{flex-direction:row;gap:7px;min-height:44px;padding:6px 8px;font-size:11px}}
 @media(prefers-reduced-motion:reduce){.migue-launcher,.migue-bark,.migue-panel{animation:none}.migue-launcher{transition:none}}
