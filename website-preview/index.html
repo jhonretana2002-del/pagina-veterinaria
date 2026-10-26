@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#a9232b">
   <meta name="description" content="La Bodeguita de mi Mascota: una propuesta de sitio web para el cuidado y bienestar de tus mascotas.">
   <title>La Bodeguita de mi Mascota · Cuidado con cariño</title>
-  <link rel="stylesheet" href="styles.css?v=reviews-20261026">
+  <link rel="stylesheet" href="styles.css?v=migue-20261026">
 </head>
 <body>
   <div class="announcement">
@@ -228,8 +228,42 @@
   <footer class="site-footer">
     <div class="container footer-inner"><div class="footer-brand"><img src="assets/logo-bodeguita.png" alt="" aria-hidden="true"><span>La Bodeguita <small>de mi Mascota</small></span></div><p>Con tu mascota desde el 2014.</p><a href="#reviews-title">Reseñas ↑</a><a href="#inicio">Ir arriba ↑</a></div>
   </footer>
+  <aside class="migue-widget" aria-label="Asistente virtual Migue">
+    <div class="migue-bark" id="migue-bark" role="status">
+      <button class="migue-bark-dismiss" type="button" aria-label="Ocultar saludo">×</button>
+      <strong>¡LADRIDO!</strong>
+      <span>¡Hola! Soy Migue. ¿Te ayudo?</span>
+    </div>
+    <button class="migue-launcher" id="migue-launcher" type="button" aria-label="Abrir chat con Migue" aria-controls="migue-panel" aria-expanded="false">
+      <img src="assets/migue.png" alt="">
+      <span class="migue-launcher-paw" aria-hidden="true">🐾</span>
+    </button>
+    <section class="migue-panel" id="migue-panel" role="dialog" aria-labelledby="migue-title" aria-modal="false" hidden>
+      <header class="migue-header">
+        <img src="assets/migue.png" alt="">
+        <div><h2 id="migue-title">Migue</h2><p>Asistente virtual · La Bodeguita</p></div>
+        <button class="migue-close" id="migue-close" type="button" aria-label="Cerrar chat">×</button>
+      </header>
+      <div class="migue-messages" id="migue-messages" aria-live="polite" aria-relevant="additions text">
+        <p class="migue-message migue-message-bot">¡Hola! Soy Migue 🐾 Puedo ayudarte con citas, ubicación, preguntas frecuentes y consultas sobre medicamentos.</p>
+        <div class="migue-topics" id="migue-topics">
+          <button type="button" data-topic="cita">Agendar cita</button>
+          <button type="button" data-topic="ubicacion">Horario y ubicación</button>
+          <button type="button" data-topic="medicamentos">Medicamentos</button>
+          <button type="button" data-topic="faq">Preguntas frecuentes</button>
+        </div>
+      </div>
+      <form class="migue-form" id="migue-form">
+        <label class="visually-hidden" for="migue-input">Escribe tu consulta</label>
+        <input id="migue-input" name="consulta" type="text" maxlength="180" placeholder="Escribe tu consulta…" autocomplete="off">
+        <button type="submit" aria-label="Enviar consulta">Enviar <span aria-hidden="true">➤</span></button>
+      </form>
+      <p class="migue-note">Asistente automático con respuestas básicas: comparte información general, no diagnostica ni indica dosis. La consulta se procesa solo en esta página.</p>
+    </section>
+  </aside>
   <script src="assets/vendor/embla-carousel.umd.js"></script>
   <script src="assets/vendor/embla-carousel-auto-scroll.umd.js"></script>
   <script src="script.js"></script>
+  <script src="migue-chat.js"></script>
 </body>
 </html>
