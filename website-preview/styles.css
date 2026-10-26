@@ -228,12 +228,15 @@ body{font-family:var(--body-font)}
 .migue-social{padding:11px 13px 13px;border-bottom:1px solid #e7ddd2;background:#f8f2eb}
 .migue-social-links{display:flex;flex-direction:column;flex-wrap:nowrap;align-items:stretch;gap:7px}
 .migue-social-links>a{flex:0 0 auto;width:100%}
-.migue-social a{display:flex;align-items:center;justify-content:center;gap:6px;min-width:0;min-height:44px;padding:6px 5px;border:1px solid #e4cfc7;border-radius:10px;background:#fffdf9;color:var(--red-dark);font-size:11px;font-weight:800;white-space:nowrap;transition:background .2s,border-color .2s,transform .2s}
-.migue-social a:hover{background:#fce9e5;border-color:#c8857c;transform:translateY(-2px)}
-.migue-social-icon{display:grid;place-items:center;flex:0 0 27px;width:27px;height:27px;border-radius:50%;background:var(--red-dark);color:#fff}
-.migue-social-icon svg{width:17px;height:17px}
-.migue-social-facebook{padding-top:4px;font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;line-height:1}
-.migue-social-floating{width:60px;padding:8px;border:1px solid #e7ddd2;border-radius:999px;box-shadow:0 8px 26px rgba(39,28,24,.14)}
+.migue-social a{display:flex;align-items:center;justify-content:center;min-width:0;min-height:44px;padding:0;border:0;border-radius:0;background:transparent;color:var(--red-dark);font-size:11px;font-weight:800;white-space:nowrap;cursor:pointer;transition:opacity .2s}
+.migue-social a:hover{background:transparent;border:0;opacity:.72;transform:none}
+.migue-social-icon{display:grid;place-items:center;flex:0 0 30px;width:30px;height:30px;border-radius:0;background:transparent;color:var(--red-dark)}
+.migue-social-links>a:nth-child(1) .migue-social-icon{color:#25a85a}
+.migue-social-links>a:nth-child(2) .migue-social-icon{color:#c13584}
+.migue-social-links>a:nth-child(3) .migue-social-icon{color:#1877f2}
+.migue-social-icon svg{width:25px;height:25px}
+.migue-social-facebook{padding-top:1px;font-family:Arial,Helvetica,sans-serif;font-size:27px;font-weight:700;line-height:1}
+.migue-social-floating{width:46px;padding:0;border:0;border-bottom:0;border-radius:0;background:transparent;box-shadow:none}
 .migue-widget.migue-chat-open .migue-social-floating{display:none}
 .migue-panel .migue-social-links>a{align-self:center;width:46px;flex:0 0 44px;border-radius:50%}
 .migue-messages{display:flex;flex:1;flex-direction:column;gap:10px;overflow-y:auto;padding:17px 15px 12px;scroll-behavior:smooth}
