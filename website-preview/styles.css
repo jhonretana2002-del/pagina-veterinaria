@@ -259,3 +259,13 @@ body{font-family:var(--body-font)}
 @media(max-width:600px){.migue-widget{right:14px;bottom:14px;gap:9px}.migue-launcher{width:70px;height:70px}.migue-panel{right:-2px;bottom:83px;width:calc(100vw - 24px);height:min(610px,calc(100dvh - 105px));min-height:340px;border-radius:16px}.migue-bark{max-width:230px;padding:11px 34px 11px 14px}.migue-bark strong{font-size:16px}}
 @media(max-width:380px){.migue-social a{flex-direction:row;gap:7px;min-height:44px;padding:6px 8px;font-size:11px}}
 @media(prefers-reduced-motion:reduce){.migue-launcher,.migue-bark,.migue-panel{animation:none}.migue-launcher{transition:none}}
+
+/* Contact shortcuts: one outlined icon per link, with no shared toolbar frame. */
+.migue-social-floating{display:flex;flex-direction:column;align-items:center;gap:8px;padding:0;border:0;background:transparent}
+.migue-social-floating a{display:grid;place-items:center;width:44px;height:44px;min-width:44px;min-height:44px;padding:0;border:1.5px solid #d8b7ae;border-radius:50%;background:#fffdf9;color:var(--red-dark);box-shadow:0 3px 10px rgba(44,30,26,.1);transition:transform .2s,border-color .2s,box-shadow .2s}
+.migue-social-floating a:hover{transform:translateY(-2px);border-color:var(--red);background:#fffdf9;box-shadow:0 5px 14px rgba(44,30,26,.16)}
+.migue-social-floating .migue-social-icon{display:grid;place-items:center;flex:0 0 26px;width:26px;height:26px;padding:0;border-radius:0;background:transparent;color:var(--red-dark)}
+.migue-social-floating .migue-social-icon svg{width:23px;height:23px}
+.migue-social-floating .migue-social-whatsapp{color:#238b54}
+.migue-social-floating .migue-social-instagram{color:#c13584}
+.migue-social-floating .migue-social-facebook{color:#1877f2;font-size:26px}
