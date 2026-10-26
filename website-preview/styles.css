@@ -227,7 +227,8 @@ body{font-family:var(--body-font)}
 .migue-close{top:23px;right:14px;color:#fff;font-size:26px}
 .migue-social{padding:11px 13px 13px;border-bottom:1px solid #e7ddd2;background:#f8f2eb}
 .migue-social-title{display:block;margin:0 0 7px 2px;color:var(--red-dark);font-size:10px;font-weight:800;letter-spacing:.14em}
-.migue-social-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.migue-social-links{display:flex;flex-direction:row;flex-wrap:nowrap;align-items:stretch;gap:7px}
+.migue-social-links>a{flex:1 1 0}
 .migue-social a{display:flex;align-items:center;justify-content:center;gap:6px;min-width:0;min-height:44px;padding:6px 5px;border:1px solid #e4cfc7;border-radius:10px;background:#fffdf9;color:var(--red-dark);font-size:11px;font-weight:800;white-space:nowrap;transition:background .2s,border-color .2s,transform .2s}
 .migue-social a:hover{background:#fce9e5;border-color:#c8857c;transform:translateY(-2px)}
 .migue-social-icon{display:grid;place-items:center;flex:0 0 27px;width:27px;height:27px;border-radius:50%;background:var(--red-dark);color:#fff}
