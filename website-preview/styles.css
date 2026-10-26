@@ -262,8 +262,8 @@ body{font-family:var(--body-font)}
 
 /* Contact shortcuts: one outlined icon per link, with no shared toolbar frame. */
 .migue-social-floating{display:flex;flex-direction:column;align-items:center;gap:8px;padding:0;border:0;background:transparent}
-.migue-social-floating a{display:grid;place-items:center;width:44px;height:44px;min-width:44px;min-height:44px;padding:0;border:1.5px solid #d8b7ae;border-radius:50%;background:#fffdf9;color:var(--red-dark);box-shadow:0 3px 10px rgba(44,30,26,.1);transition:transform .2s,border-color .2s,box-shadow .2s}
-.migue-social-floating a:hover{transform:translateY(-2px);border-color:var(--red);background:#fffdf9;box-shadow:0 5px 14px rgba(44,30,26,.16)}
+.migue-social-floating a{display:grid;place-items:center;width:44px;height:44px;min-width:44px;min-height:44px;padding:0;border:2px solid #b52b33;border-radius:50%;background:#fff;color:var(--red-dark);box-shadow:0 3px 10px rgba(44,30,26,.16);transition:transform .2s,border-color .2s,box-shadow .2s}
+.migue-social-floating a:hover{transform:translateY(-2px);border-color:var(--red-dark);background:#f9e8e5;box-shadow:0 5px 14px rgba(44,30,26,.2)}
 .migue-social-floating .migue-social-icon{display:grid;place-items:center;flex:0 0 26px;width:26px;height:26px;padding:0;border-radius:0;background:transparent;color:var(--red-dark)}
 .migue-social-floating .migue-social-icon svg{width:23px;height:23px}
 .migue-social-floating .migue-social-whatsapp{color:#238b54}
