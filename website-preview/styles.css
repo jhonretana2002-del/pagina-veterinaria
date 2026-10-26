@@ -226,7 +226,6 @@ body{font-family:var(--body-font)}
 .migue-header p{margin:4px 0 0;color:#f9dbd5;font-size:11px}
 .migue-close{top:23px;right:14px;color:#fff;font-size:26px}
 .migue-social{padding:11px 13px 13px;border-bottom:1px solid #e7ddd2;background:#f8f2eb}
-.migue-social-title{display:block;margin:0 0 7px 2px;color:var(--red-dark);font-size:10px;font-weight:800;letter-spacing:.14em}
 .migue-social-links{display:flex;flex-direction:column;flex-wrap:nowrap;align-items:stretch;gap:7px}
 .migue-social-links>a{flex:0 0 auto;width:100%}
 .migue-social a{display:flex;align-items:center;justify-content:center;gap:6px;min-width:0;min-height:44px;padding:6px 5px;border:1px solid #e4cfc7;border-radius:10px;background:#fffdf9;color:var(--red-dark);font-size:11px;font-weight:800;white-space:nowrap;transition:background .2s,border-color .2s,transform .2s}
@@ -234,8 +233,9 @@ body{font-family:var(--body-font)}
 .migue-social-icon{display:grid;place-items:center;flex:0 0 27px;width:27px;height:27px;border-radius:50%;background:var(--red-dark);color:#fff}
 .migue-social-icon svg{width:17px;height:17px}
 .migue-social-facebook{padding-top:4px;font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;line-height:1}
-.migue-social-floating{width:min(330px,calc(100vw - 32px));border:1px solid #e7ddd2;border-radius:14px;box-shadow:0 8px 26px rgba(39,28,24,.14)}
+.migue-social-floating{width:60px;padding:8px;border:1px solid #e7ddd2;border-radius:999px;box-shadow:0 8px 26px rgba(39,28,24,.14)}
 .migue-widget.migue-chat-open .migue-social-floating{display:none}
+.migue-panel .migue-social-links>a{align-self:center;width:46px;flex:0 0 44px;border-radius:50%}
 .migue-messages{display:flex;flex:1;flex-direction:column;gap:10px;overflow-y:auto;padding:17px 15px 12px;scroll-behavior:smooth}
 .migue-message{width:fit-content;max-width:88%;margin:0;padding:11px 13px;border-radius:14px;font-size:13px;line-height:1.5;overflow-wrap:anywhere}
 .migue-message-bot{align-self:flex-start;border:1px solid #ece4da;border-bottom-left-radius:4px;background:#fff;color:var(--ink)}
