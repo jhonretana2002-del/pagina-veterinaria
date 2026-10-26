@@ -205,7 +205,7 @@ body{font-family:var(--body-font)}
 .visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .migue-widget{position:fixed;right:24px;bottom:22px;z-index:1000;display:flex;flex-direction:column;align-items:flex-end;gap:12px;font-family:var(--body-font,Arial,sans-serif)}
 .migue-widget [hidden]{display:none!important}
-.migue-launcher{position:relative;width:82px;height:82px;padding:4px;border:3px solid #fff;border-radius:50%;background:var(--red);box-shadow:0 8px 26px rgba(44,30,26,.28);cursor:pointer;transition:transform .2s,box-shadow .2s;animation:none}
+.migue-launcher{position:relative;width:82px;height:82px;padding:0;border:0;border-radius:50%;background:transparent;box-shadow:0 7px 20px rgba(44,30,26,.2);cursor:pointer;transition:transform .2s,box-shadow .2s;animation:none}
 .migue-launcher:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 11px 30px rgba(44,30,26,.34)}
 .migue-launcher:focus-visible,.migue-close:focus-visible,.migue-bark-dismiss:focus-visible,.migue-form button:focus-visible,.migue-topics button:focus-visible,.migue-actions a:focus-visible,.migue-social a:focus-visible{outline:3px solid #edaa21;outline-offset:3px}
 .migue-cartoon{display:block;width:100%;height:100%;flex:0 0 auto;overflow:hidden;border-radius:50%;background-image:url('assets/migue-bark-sprite-v2.png');background-repeat:no-repeat;background-size:200% 200%;background-position:0 0;clip-path:circle(50%)}
