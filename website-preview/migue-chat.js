@@ -1,6 +1,7 @@
 /* Conversation flow inspired by Peekobot (MIT): https://github.com/Peekobot/peekobot */
 (() => {
   const launcher = document.querySelector('#migue-launcher');
+  const widget = document.querySelector('.migue-widget');
   const panel = document.querySelector('#migue-panel');
   const closeButton = document.querySelector('#migue-close');
   const bark = document.querySelector('#migue-bark');
@@ -108,6 +109,7 @@
 
   function openChat() {
     panel.hidden = false;
+    widget.classList.add('migue-chat-open');
     bark.hidden = true;
     launcher.classList.remove('migue-is-barking');
     barkTitle.textContent = 'Migue';
@@ -118,6 +120,7 @@
 
   function closeChat() {
     panel.hidden = true;
+    widget.classList.remove('migue-chat-open');
     launcher.setAttribute('aria-expanded', 'false');
     launcher.setAttribute('aria-label', 'Abrir chat con Migue');
     launcher.focus();
